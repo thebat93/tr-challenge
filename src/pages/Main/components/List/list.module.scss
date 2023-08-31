@@ -1,0 +1,41 @@
+$header-height: 78px;
+$heading-height: 85px;
+$form-height: 137px;
+$subheading-height: 72px;
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: calc(
+    100dvh - $header-height - $heading-height - $form-height -
+      $subheading-height
+  );
+  overflow-y: scroll;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .cardHeading {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .list {
+    display: grid;
+    max-height: none;
+    overflow-y: auto;
+    grid-template-columns: repeat(3, 1fr);
+
+    .button {
+      width: 120px;
+    }
+  }
+}

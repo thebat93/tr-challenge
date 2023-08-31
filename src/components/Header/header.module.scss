@@ -1,0 +1,10 @@
+.header {
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: flex;
+  max-width: var(--max-width);
+
+  .link {
+    height: 30px;
+  }
+}

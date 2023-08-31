@@ -1,0 +1,31 @@
+.wrapper {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: var(--font-bold);
+  padding-top: 32px;
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.subheading {
+  font-family: var(--font-medium);
+  padding-top: 32px;
+  padding-bottom: 16px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.errorMessage {
+  margin-bottom: 16px;
+  color: var(--color-primary-red2);
+}
+
+@media screen and (min-width: 960px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}

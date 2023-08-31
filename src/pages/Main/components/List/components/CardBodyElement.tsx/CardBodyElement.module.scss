@@ -1,0 +1,11 @@
+.wrapper {
+  .value {
+    &.success {
+      color: var(--color-primary-green3);
+    }
+
+    &.danger {
+      color: var(--color-primary-red3);
+    }
+  }
+}

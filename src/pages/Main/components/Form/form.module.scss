@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error {
+  color: var(--color-primary-red2);
+}
+
+@media screen and (min-width: 960px) {
+  .wrapper {
+    width: 540px;
+  }
+
+  .field {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .button {
+    width: 200px;
+    margin-left: 32px;
+    align-self: flex-start;
+  }
+}
